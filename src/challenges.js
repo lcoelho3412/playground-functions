@@ -1,6 +1,12 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(ensol, fds) {
+  if (ensol === true && fds === true) {
+    return true;
+  }
+  if (ensol === false && fds === false) {
+    return false;
+  }
+  return false;
 }
 
 // Desafio 2
