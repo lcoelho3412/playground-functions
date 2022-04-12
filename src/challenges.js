@@ -21,9 +21,12 @@ function calcArea(base, altura) {
 
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(xablau) {
+  let xablauArray = {};
+  xablauArray = xablau.split(" ");
+  return xablauArray;
 }
+
 
 // Desafio 4
 function concatName() {
