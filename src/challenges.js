@@ -10,9 +10,15 @@ function compareTrue(ensol, fds) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, altura) {
+  let resultado = {};
+
+  resultado = (base * altura) / 2;
+
+  return resultado
 }
+
+
 
 // Desafio 3
 function splitSentence() {
