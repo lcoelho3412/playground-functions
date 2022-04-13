@@ -15,9 +15,8 @@ function calcArea(base, altura) {
 
   resultado = (base * altura) / 2;
 
-  return resultado
+  return resultado;
 }
-
 
 
 // Desafio 3
@@ -27,10 +26,11 @@ function splitSentence(xablau) {
   return xablauArray;
 }
 
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(xablau) {
+  let first = xablau[0];
+  let last = xablau[xablau.length - 1];
+  return (last + ', ' + first);
 }
 
 // Desafio 5
