@@ -58,7 +58,7 @@ function catAndMouse() {
 function fizzBuzz(xablau) {
   let resultado = [];
   for (let i = 0; i < xablau.length; i++) {
-    
+
     if (xablau[i] % 5 === 0 && xablau[i] % 3 === 0) {
       resultado.push("fizzBuzz");
     } else if (xablau[i] % 5 === 0) {
@@ -70,12 +70,23 @@ function fizzBuzz(xablau) {
   return resultado;
 }
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(xablau) {
+  
+xablau = xablau.replace(/a/g, "1");
+xablau = xablau.replace(/e/g, "2");
+xablau = xablau.replace(/i/g, "3");
+xablau = xablau.replace(/o/g, "4");
+xablau = xablau.replace(/u/g, "5");
+return xablau;
 }
 
-function decode() {
-  // seu código aqui
+function decode(xablau) {
+  xablau = xablau.replace(/1/g, "a");
+  xablau = xablau.replace(/2/g, "e");
+  xablau = xablau.replace(/3/g, "i");
+  xablau = xablau.replace(/4/g, "o");
+  xablau = xablau.replace(/5/g, "u");
+  return xablau;
 }
 
 // Desafio 10
