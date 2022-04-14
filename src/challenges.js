@@ -55,10 +55,20 @@ function catAndMouse() {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(xablau) {
+  let resultado = [];
+  for (let i = 0; i < xablau.length; i++) {
+    
+    if (xablau[i] % 5 === 0 && xablau[i] % 3 === 0) {
+      resultado.push("fizzBuzz");
+    } else if (xablau[i] % 5 === 0) {
+      resultado.push("buzz");
+    } else if (xablau[i] % 3 === 0) {
+      resultado.push('fizz');
+    } else resultado.push('bug!');
+  }
+  return resultado;
 }
-
 // Desafio 9
 function encode() {
   // seu código aqui
