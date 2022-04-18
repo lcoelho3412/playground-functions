@@ -50,8 +50,16 @@ function highestCount(xablau) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  let distance1 = (Math.abs(mouse - cat1))
+  let distance2 = (Math.abs(mouse - cat2))
+  if (distance1 > distance2) {
+    return ('cat2')
+  } else {
+    if (distance1 < distance2)
+      return ('cat1')
+  }
+  return ('os gatos trombam e o rato foge')
 }
 
 // Desafio 8
@@ -90,20 +98,20 @@ function decode(xablau) {
 }
 
 // Desafio 10
-function techList(tech, name) {let tool = tech.sort()
+function techList(tech, name) {
+  let tool = tech.sort()
   let obj = []
   if (tech == 0) {
-      return "Vazio!"
-  }
-  else {
-  for (let i = 0; i < tool.length; i+=1) {
+    return "Vazio!"
+  } else {
+    for (let i = 0; i < tool.length; i += 1) {
       obj.push({
-          tech: tool[i],
-          name: name
+        tech: tool[i],
+        name: name
       })
+    }
+    return obj
   }
-  return obj
-}
 }
 
 module.exports = {
