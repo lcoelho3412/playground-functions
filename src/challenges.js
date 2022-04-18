@@ -71,13 +71,13 @@ function fizzBuzz(xablau) {
 }
 // Desafio 9
 function encode(xablau) {
-  
-xablau = xablau.replace(/a/g, "1");
-xablau = xablau.replace(/e/g, "2");
-xablau = xablau.replace(/i/g, "3");
-xablau = xablau.replace(/o/g, "4");
-xablau = xablau.replace(/u/g, "5");
-return xablau;
+
+  xablau = xablau.replace(/a/g, "1");
+  xablau = xablau.replace(/e/g, "2");
+  xablau = xablau.replace(/i/g, "3");
+  xablau = xablau.replace(/o/g, "4");
+  xablau = xablau.replace(/u/g, "5");
+  return xablau;
 }
 
 function decode(xablau) {
@@ -90,8 +90,20 @@ function decode(xablau) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tech, name) {let tool = tech.sort()
+  let obj = []
+  if (tech == 0) {
+      return "Vazio!"
+  }
+  else {
+  for (let i = 0; i < tool.length; i+=1) {
+      obj.push({
+          tech: tool[i],
+          name: name
+      })
+  }
+  return obj
+}
 }
 
 module.exports = {
